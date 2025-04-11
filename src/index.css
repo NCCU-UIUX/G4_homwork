@@ -1,0 +1,68 @@
+/* postcss-import */
+/* tailwindcss/base */
+/* tailwindcss/components */
+/* tailwindcss/utilities */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #57473c;
+  scroll-behavior: smooth;
+  background-color: #f8f5f2;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+@layer components {
+  .artisan-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .artisan-title {
+    @apply font-serif text-artisan-900 leading-tight;
+  }
+  
+  .artisan-subtitle {
+    @apply font-sans text-artisan-600 tracking-wide;
+  }
+  
+  .artisan-btn {
+    @apply bg-accent-terracotta text-white py-3 px-6 rounded-lg font-medium shadow-artisan-sm
+      hover:shadow-artisan transition-shadow duration-300 focus:outline-none focus:ring-2 
+      focus:ring-accent-terracotta focus:ring-opacity-50;
+  }
+  
+  .artisan-btn-secondary {
+    @apply bg-accent-olive text-white py-3 px-6 rounded-lg font-medium shadow-artisan-sm
+      hover:shadow-artisan transition-shadow duration-300 focus:outline-none focus:ring-2 
+      focus:ring-accent-olive focus:ring-opacity-50;
+  }
+  
+  .artisan-btn-outline {
+    @apply border-2 border-accent-terracotta text-accent-terracotta py-3 px-6 rounded-lg 
+      font-medium hover:bg-accent-terracotta hover:text-white transition-colors duration-300 
+      focus:outline-none focus:ring-2 focus:ring-accent-terracotta focus:ring-opacity-50;
+  }
+  
+  .artisan-card {
+    @apply bg-white rounded-xl shadow-artisan overflow-hidden hover:shadow-artisan-lg transition-shadow duration-300;
+  }
+  
+  .artisan-input {
+    @apply block w-full px-4 py-3 border border-artisan-200 rounded-lg focus:ring-2 focus:ring-accent-terracotta 
+      focus:border-accent-terracotta bg-white text-artisan-900 placeholder-artisan-400;
+  }
+  
+  .artisan-tag {
+    @apply inline-block px-3 py-1 text-xs font-medium rounded-full bg-accent-sage/20 text-accent-olive;
+  }
+}
