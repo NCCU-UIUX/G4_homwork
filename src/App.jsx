@@ -1,11 +1,10 @@
-import { useState } from 'react'
-import Header from './components/header'
-import Hero from './components/Hero'
-import About from './components/About'
-import Shop from './components/Shop'
-import Artisans from './components/Artisans'
-import Footer from './components/Footer'
-import Categories from './components/Categories'
+import Header from "./components/Header.jsx"; 
+import Hero from './components/Hero.jsx'
+import About from './components/About.jsx'
+import Shop from './components/Shop.jsx'
+import Artisans from './components/Artisans.jsx'
+import Footer from './components/Footer.jsx'
+import Categories from './components/Categories.jsx'
 
 function App() {
   return (
