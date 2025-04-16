@@ -10,7 +10,7 @@
 
 本網站展示了使用者體驗設計課程中的以下作業成果：
 
-- HW1: [登山受眾訪談紀錄](https://docs.google.com/document/d/1genyyEITWd0_jrnLkpz_9qlEijjGo5yF/edit)
+- HW1: [訪談紀錄](https://docs.google.com/document/d/1v7YsPch3bgEbBd5LktYDhUAtXqHN3iacRB8Fa2dXZ20/edit?usp=sharing)
 - HW2: [用戶旅程與痛點分析](https://miro.com/app/welcome/?requested_url=/app/board/uXjVIDk0EyY=/)
 - HW3: 設計解決方案（待完成）
 - HW4: 原型測試與迭代（待完成）
