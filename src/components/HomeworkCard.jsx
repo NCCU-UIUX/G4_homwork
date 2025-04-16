@@ -1,17 +1,23 @@
-import React from 'react';
-
 const HomeworkCard = ({ homework }) => {
   return (
     <div className="artisan-card overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
       <div className="relative">
         <a href={homework.link} target="_blank" rel="noopener noreferrer">
-          <div className="w-full h-60 flex items-center justify-center bg-accent-terracotta">
+          <div className={`w-full h-60 flex items-center justify-center ${
+            homework.status === 'completed' 
+              ? 'bg-accent-sage/70' 
+              : 'bg-accent-terracotta'
+          }`}>
             <span className="font-serif text-4xl font-bold text-white">
               HW{homework.number}
             </span>
           </div>
           <div className="absolute top-4 left-4">
-            <span className="artisan-tag bg-accent-olive/80 text-white font-bold">
+            <span className={`artisan-tag ${
+              homework.status === 'completed'
+                ? 'bg-accent-olive/60 text-white'
+                : 'bg-accent-olive/80 text-white'
+            } font-bold`}>
               HW{homework.number}
             </span>
           </div>
