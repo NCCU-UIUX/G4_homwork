@@ -18,7 +18,7 @@ const homeworks = [
     title: 'Affinity Diagram',
     description: '繪製 Affinity Diagram，分析核心需求。',
     imageUrl: 'https://images.unsplash.com/photo-1572177191856-3cde618dee1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    link: 'https://miro.com/app/welcome/?requested_url=/app/board/uXjVIDk0EyY=/',
+    link: 'https://miro.com/app/board/uXjVIDk0EyY=/',
     status: 'completed'
   },
   {
