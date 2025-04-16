@@ -9,7 +9,7 @@ const homeworks = [
     title: '登山受眾訪談紀錄',
     description: '針對登山愛好者進行的使用者研究訪談，了解他們的需求、行為和痛點。',
     imageUrl: 'https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    link: 'https://docs.google.com/document/d/1genyyEITWd0_jrnLkpz_9qlEijjGo5yF/edit',
+    link: 'https://docs.google.com/document/d/1v7YsPch3bgEbBd5LktYDhUAtXqHN3iacRB8Fa2dXZ20/edit?usp=sharing',
     status: 'completed'
   },
   {
