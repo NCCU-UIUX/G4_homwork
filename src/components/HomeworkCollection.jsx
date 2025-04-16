@@ -8,7 +8,6 @@ const homeworks = [
     number: 1,
     title: 'CI report',
     description: '針對三位使用者研究訪談，了解他們的需求、行為和痛點。',
-    imageUrl: 'https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     link: 'https://docs.google.com/document/d/1v7YsPch3bgEbBd5LktYDhUAtXqHN3iacRB8Fa2dXZ20/edit?usp=sharing',
     status: 'completed'
   },
@@ -17,7 +16,6 @@ const homeworks = [
     number: 2,
     title: 'Affinity Diagram',
     description: '繪製 Affinity Diagram，分析核心需求。',
-    imageUrl: 'https://images.unsplash.com/photo-1572177191856-3cde618dee1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     link: 'https://miro.com/app/board/uXjVIDk0EyY=/',
     status: 'completed'
   },
@@ -26,7 +24,6 @@ const homeworks = [
     number: 3,
     title: 'HW3: 設計解決方案',
     description: '根據前期研究，提出創新的設計解決方案，並進行初步原型設計。',
-    imageUrl: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     link: '#',
     status: 'pending'
   },
@@ -35,7 +32,6 @@ const homeworks = [
     number: 4,
     title: 'HW4: 原型測試與迭代',
     description: '進行用戶測試，收集反饋，並基於結果進行設計迭代與優化。',
-    imageUrl: 'https://images.unsplash.com/photo-1600132806608-231446b2e7af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80',
     link: '#',
     status: 'pending'
   },
@@ -44,7 +40,6 @@ const homeworks = [
     number: 5,
     title: 'HW5: 最終設計展示',
     description: '呈現最終設計成果，包括高保真原型和完整的設計系統。',
-    imageUrl: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80',
     link: '#',
     status: 'pending'
   }

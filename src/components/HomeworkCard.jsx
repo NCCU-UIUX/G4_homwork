@@ -5,11 +5,11 @@ const HomeworkCard = ({ homework }) => {
     <div className="artisan-card overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
       <div className="relative">
         <a href={homework.link} target="_blank" rel="noopener noreferrer">
-          <img 
-            src={homework.imageUrl} 
-            alt={`作業 ${homework.number}預覽`} 
-            className="w-full h-60 object-cover"
-          />
+          <div className="w-full h-60 flex items-center justify-center bg-accent-terracotta">
+            <span className="font-serif text-4xl font-bold text-white">
+              HW{homework.number}
+            </span>
+          </div>
           <div className="absolute top-4 left-4">
             <span className="artisan-tag bg-accent-olive/80 text-white font-bold">
               HW{homework.number}
