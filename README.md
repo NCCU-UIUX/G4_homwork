@@ -12,7 +12,7 @@
 
 - HW1: [CI report](https://docs.google.com/document/d/1v7YsPch3bgEbBd5LktYDhUAtXqHN3iacRB8Fa2dXZ20/edit?usp=sharing)
 - HW2: [Affinity Diagram](https://miro.com/app/board/uXjVIDk0EyY=/)
-- HW3: 設計解決方案（待完成）
+- HW3: [User Personas](/hw3.html)
 - HW4: 原型測試與迭代（待完成）
 - HW5: 最終設計展示（待完成）
 
