@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW3: User Personas</title>
+  <!-- Import the same CSS as the main app -->
+  <link rel="stylesheet" href="/src/index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'artisan': {
+              50: '#f8f7f4',
+              100: '#e9e6df',
+              200: '#d5cfc0',
+              300: '#bbb1a0',
+              400: '#a08e79',
+              500: '#8a7762',
+              600: '#756152',
+              700: '#5f4e44',
+              800: '#4e4138',
+              900: '#413730',
+            },
+            'accent': {
+              'terracotta': '#c76a45',
+              'olive': '#5c6f4c',
+              'sage': '#8a9a7c',
+              'clay': '#b3896b',
+              'sand': '#d9c3a9',
+            }
+          },
+          fontFamily: {
+            'serif': ['Noto Serif TC', 'serif'],
+            'sans': ['Noto Sans TC', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #f8f7f4;
+    }
+    
+    .artisan-container {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    
+    .artisan-title {
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 600;
+      color: #413730;
+    }
+    
+    .artisan-subtitle {
+      color: #756152;
+      line-height: 1.6;
+    }
+    
+    .artisan-card {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    
+    .artisan-btn-outline {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border: 1px solid #c76a45;
+      border-radius: 0.25rem;
+      color: #c76a45;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    
+    .artisan-btn-outline:hover {
+      background-color: #c76a45;
+      color: white;
+    }
+
+    .persona-card {
+      transition: transform 0.3s ease;
+    }
+
+    .persona-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .language-toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .language-btn {
+      padding: 0.5rem 1.5rem;
+      border: 1px solid #c76a45;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .language-btn:first-child {
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+    }
+
+    .language-btn:last-child {
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+
+    .language-btn.active {
+      background-color: #c76a45;
+      color: white;
+    }
+
+    .persona-image {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 90vh;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+      z-index: 101;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-white shadow-sm">
+    <div class="artisan-container py-4 flex justify-between items-center">
+      <a href="/" class="text-2xl font-serif font-semibold text-artisan-800">UIUX 作業展示</a>
+      <a href="/" class="artisan-btn-outline">返回首頁</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-20 bg-white">
+      <div class="artisan-container">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <h2 class="artisan-title text-3xl sm:text-4xl mb-6">HW3: User Personas</h2>
+          <p class="artisan-subtitle mb-8">
+            建立 User Personas，深入理解目標使用者群體的特點和需求。
+          </p>
+        </div>
+
+        <div class="language-toggle">
+          <button class="language-btn active" data-lang="CH">中文</button>
+          <button class="language-btn" data-lang="EN">English</button>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Persona 1 -->
+          <div class="artisan-card overflow-hidden persona-card">
+            <img src="/images/User Persona 1-CH.png" alt="User Persona 1" class="persona-image" data-ch="/images/User Persona 1-CH.png" data-en="/images/User Persona 1-EN.png" onclick="openModal(this)">
+          </div>
+          
+          <!-- Persona 2 -->
+          <div class="artisan-card overflow-hidden persona-card">
+            <img src="/images/User Persona 2-CH.png" alt="User Persona 2" class="persona-image" data-ch="/images/User Persona 2-CH.png" data-en="/images/User Persona 2-EN.png" onclick="openModal(this)">
+          </div>
+          
+          <!-- Persona 3 -->
+          <div class="artisan-card overflow-hidden persona-card">
+            <img src="/images/User Persona 3-CH.png" alt="User Persona 3" class="persona-image" data-ch="/images/User Persona 3-CH.png" data-en="/images/User Persona 3-EN.png" onclick="openModal(this)">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-artisan-800 text-white py-12">
+    <div class="artisan-container">
+      <div class="text-center">
+        <p class="mb-2">© 2025 UIUX 作業展示</p>
+        <p class="text-artisan-300 text-sm">使用者體驗設計課程 - G4 小組</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for image preview -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script>
+    // Language toggle
+    const languageBtns = document.querySelectorAll('.language-btn');
+    const personaImages = document.querySelectorAll('.persona-image');
+    
+    languageBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        languageBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Update images based on language
+        const lang = btn.getAttribute('data-lang');
+        personaImages.forEach(img => {
+          img.src = img.getAttribute(`data-${lang.toLowerCase()}`);
+        });
+      });
+    });
+
+    // Modal functionality
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+
+    function openModal(img) {
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', function(event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -24,7 +24,7 @@ const homeworks = [
     number: 3,
     title: 'HW3: User Personas',
     description: '建立 User Personas，深入理解目標使用者群體的特點和需求。',
-    link: '#',
+    link: '/hw3.html',
     status: 'completed'
   },
   {
