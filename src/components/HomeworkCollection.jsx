@@ -6,7 +6,7 @@ const homeworks = [
   {
     id: 1,
     number: 1,
-    title: 'CI report',
+    title: 'HW1: Contextual Inquiry Report',
     description: '針對三位使用者研究訪談，了解他們的需求、行為和痛點。',
     link: 'https://docs.google.com/document/d/1v7YsPch3bgEbBd5LktYDhUAtXqHN3iacRB8Fa2dXZ20/edit?usp=sharing',
     status: 'completed'
@@ -14,7 +14,7 @@ const homeworks = [
   {
     id: 2,
     number: 2,
-    title: 'Affinity Diagram',
+    title: 'HW2: Affinity Diagram',
     description: '繪製 Affinity Diagram，分析核心需求。',
     link: 'https://miro.com/app/board/uXjVIDk0EyY=/',
     status: 'completed'
@@ -22,15 +22,15 @@ const homeworks = [
   {
     id: 3,
     number: 3,
-    title: 'HW3: 設計解決方案',
-    description: '根據前期研究，提出創新的設計解決方案，並進行初步原型設計。',
+    title: 'HW3: User Personas',
+    description: '建立 User Personas，深入理解目標使用者群體的特點和需求。',
     link: '#',
-    status: 'pending'
+    status: 'completed'
   },
   {
     id: 4,
     number: 4,
-    title: 'HW4: 原型測試與迭代',
+    title: 'HW4: Low-fidelity Prototype',
     description: '進行用戶測試，收集反饋，並基於結果進行設計迭代與優化。',
     link: '#',
     status: 'pending'
@@ -38,8 +38,16 @@ const homeworks = [
   {
     id: 5,
     number: 5,
-    title: 'HW5: 最終設計展示',
-    description: '呈現最終設計成果，包括高保真原型和完整的設計系統。',
+    title: 'HW5: High-fidelity Prototype',
+    description: '建立高保真原型，展示設計的細節和細節。',
+    link: '#',
+    status: 'pending'
+  },
+  {
+    id: 6,
+    number: 6,
+    title: 'HW6: Heuristic Evaluation',
+    description: '進行 Heuristic Evaluation，評估設計的可用性。',
     link: '#',
     status: 'pending'
   }
