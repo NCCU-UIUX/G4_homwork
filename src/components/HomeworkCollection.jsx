@@ -32,8 +32,8 @@ const homeworks = [
     number: 4,
     title: 'HW4: Low-fidelity Prototype',
     description: '進行用戶測試，收集反饋，並基於結果進行設計迭代與優化。',
-    link: '#',
-    status: 'pending'
+    link: 'https://map-nine-dusky.vercel.app/',
+    status: 'completed'
   },
   {
     id: 5,
