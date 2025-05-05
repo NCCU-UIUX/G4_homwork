@@ -50,6 +50,14 @@ const homeworks = [
     description: '進行 Heuristic Evaluation，評估設計的可用性。',
     link: '#',
     status: 'pending'
+  },
+  {
+    id: 7,
+    number: 7,
+    title: 'Revision Plan',
+    description: '收集回饋意見，進行設計迭代與優化。',
+    link: 'https://docs.google.com/document/d/1Y7dU5MozHF0ynQCvetV0t96Z3Hw4K9zB0CmCUWJr6OU/edit?tab=t.0',
+    status: 'completed'
   }
 ];
 
