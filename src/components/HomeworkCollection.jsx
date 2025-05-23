@@ -40,8 +40,8 @@ const homeworks = [
     number: 5,
     title: 'HW5: High-fidelity Prototype',
     description: '建立高保真原型，展示設計的細節和細節。',
-    link: '#',
-    status: 'pending'
+    link: 'https://arou.vercel.app/',
+    status: 'completed'
   },
   {
     id: 6,
