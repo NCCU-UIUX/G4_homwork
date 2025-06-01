@@ -46,10 +46,10 @@ const homeworks = [
   {
     id: 6,
     number: 6,
-    title: 'HW6: Heuristic Evaluation',
-    description: '進行 Heuristic Evaluation，評估設計的可用性。',
-    link: '#',
-    status: 'pending'
+    title: 'Final flyer',
+    description: '完成最終設計展示。',
+    link: '/images/使用者體驗設計 海報.png',
+    status: 'completed'
   },
   {
     id: 7,
