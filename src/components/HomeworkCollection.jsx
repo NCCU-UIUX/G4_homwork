@@ -46,9 +46,10 @@ const homeworks = [
   {
     id: 6,
     number: 6,
-    title: 'Final flyer',
-    description: '完成最終設計展示。',
-    link: '/images/使用者體驗設計 海報.png',
+    title: 'Final Design Showcase',
+    description: '完成最終設計成果展示，包含作品海報與展示影片。',
+    link: 'https://youtu.be/Xgxg5J3gt90?si=ijBGwajegM6yKrTn',
+    posterLink: '/images/使用者體驗設計 海報.png', 
     status: 'completed'
   },
   {
