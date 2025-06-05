@@ -39,7 +39,7 @@ const homeworks = [
     id: 5,
     number: 5,
     title: 'HW5: High-fidelity Prototype',
-    description: '建立高保真原型，展示設計的細節和細節。',
+    description: '建立高保真原型，展示設計的細節和細節。##點擊「查看作業」後需更新才能正常查看網站',
     link: 'https://arou-de292.web.app/',
     status: 'completed'
   },
